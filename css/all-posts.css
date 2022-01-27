@@ -1,0 +1,60 @@
+.banner {
+  height: 400px;
+  background-image: url(../img/banner-image.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.section-2 {
+  text-align: center;
+}
+
+.section-2 .circle {
+  width: 250px;
+  height: 250px;
+  background: #fff;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 50%;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+
+  /* position: relative; */
+  bottom: 100px;
+  z-index: 3;
+}
+.section-2 .circle img {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 1rem;
+}
+.section-2 .circle h5 {
+  text-transform: uppercase;
+  color: #4b575f;
+  font-size: 18px;
+}
+.section-2 .social_media {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+}
+.section-2 .social_media a {
+  display: inline-block;
+  margin: 0 10px;
+  text-decoration: none;
+}
+.section-2 .social_media .fa-facebook-f {
+  color: #3b5998;
+}
+.section-2 .social_media .fa-twitter {
+  color: #1da1f2;
+}
+.section-2 .social_media .fa-google-plus-g {
+  color: #e1306c;
+}
+.section-2 .social_media .fa-linkedin-in {
+  color: #0077b5;
+}
