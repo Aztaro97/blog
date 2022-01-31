@@ -1,0 +1,223 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --text-color: #4b575f;
+  --orange-color: #a25b48;
+  --bg-color: #f9f9f9;
+}
+
+html,
+body {
+  height: 4000px;
+  font-family: "Open Sans Condensed", sans-serif;
+  background-color: var(--bg-color);
+}
+
+.bg-orange {
+  background: var(--orange-color);
+}
+.bg-color {
+  background: var(--bg-color);
+}
+.text-orange {
+  color: var(--orange-color);
+}
+
+.banner {
+  height: 400px;
+  background-image: url(../img/banner-image.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* **********  MAIN  **************** */
+main {
+  max-width: 1200px;
+  margin: auto;
+}
+.section-grid {
+  display: grid;
+  grid-template-columns: 6fr 2fr;
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+
+  position: relative;
+  bottom: 2rem;
+  z-index: 4;
+}
+
+/* ********  LEFT BAR  ******** */
+.left_bar {
+  width: 100px;
+  background-color: #fff;
+  float: left;
+  position: absolute;
+  left: -6.5rem;
+}
+.nav_list {
+  /* padding: 1rem; */
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  list-style: none;
+}
+.nav_list li {
+  padding: 1rem 0.7rem;
+  border-bottom: 1px solid #e6e6e6;
+}
+.nav_list .nav_link {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  align-items: center;
+  color: #b2b2b2;
+}
+.nav_list .fas {
+  font-size: 1.5rem;
+}
+.nav_list .nav_link:hover {
+  color: var(--orange-color);
+}
+.nav_list .number {
+  color: #000;
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+/* *********   POST CONTAINER ***********  */
+.article_container {
+  background: #fff;
+  padding: 2rem;
+}
+.article .article_title {
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+  font-size: 2.1rem;
+}
+.article_container .article_img {
+  width: 100%;
+}
+.commenter_container {
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+}
+.comment_header {
+  background: #eff3f7;
+  padding: 10px;
+}
+.comment_header h4 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+.comment_body {
+  background: #fff;
+  padding: 10px;
+}
+.comment_body .avatar {
+  object-fit: cover;
+}
+.comment_body .poster_detail {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.comment_body .poster_name {
+  color: #000;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+}
+.comment_body .btn_submit {
+  float: right;
+  background: var(--orange-color);
+  color: #fff;
+  text-transform: capitalize;
+  border-radius: 3px;
+  letter-spacing: 1px;
+}
+
+.comment_body .comment_item {
+  border-top: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+/* ***************    CARD ARTICLE  ************ */
+.featured_section .title {
+  text-align: center;
+  letter-spacing: 1px;
+  font-size: 1.5rem;
+}
+._card_article {
+  position: relative;
+  width: 100%;
+  height: 200px;
+}
+._card_article img {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+._card_article .content {
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: 50%;
+  bottom: 50%;
+  padding: 10px;
+  z-index: 333;
+}
+
+._card_article .content a {
+  text-decoration: none;
+  color: #fff;
+  letter-spacing: 1px;
+}
+._card_article .content h4 {
+  font-size: 1.4rem;
+  color: #fff;
+  letter-spacing: 1px;
+  font-weight: 700;
+}
+
+/* *********  TAG SECTION ****** */
+.tag_container {
+  background: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+}
+.tag_container .tag_header {
+  padding: 10px 0;
+  font-size: 1.5rem;
+  text-align: center;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+.catalogue_body {
+  padding: 20px;
+}
+.catalogue_body .btn {
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  padding: 5px 10px;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  background: var(--bg-color);
+}
+
+/* **********  RESPONSIVE  */
+@media only screen and (max-width: 768px) {
+  .section-grid {
+    grid-template-columns: 1fr;
+    grid-column-gap: 20px;
+    padding-top: 80px !important;
+  }
+}
