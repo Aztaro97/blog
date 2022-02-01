@@ -333,6 +333,7 @@ body {
   border: 1px solid rgba(0, 0, 0, 0.125);
 }
 .subs_container .subs_header {
+  text-transform: capitalize;
   padding: 10px 0;
   font-size: 1.5rem;
   text-align: center;

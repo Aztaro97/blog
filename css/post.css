@@ -34,8 +34,6 @@ body {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-
-  
 }
 
 /* **********  MAIN  **************** */
@@ -56,11 +54,8 @@ main {
 
 /* ********  LEFT BAR  ******** */
 .left_bar {
-  width: 100px;
+  max-width: 100px;
   background-color: #fff;
-  float: left;
-  position: absolute;
-  left: -6.5rem;
 }
 .nav_list {
   /* padding: 1rem; */
@@ -222,7 +217,7 @@ main {
 
   .left_bar {
     position: inherit;
-    width: 100%;
+    max-width: 100%;
     float: none;
   }
   .nav_list {
